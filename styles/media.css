@@ -1,21 +1,21 @@
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap");
+body {
+  background: #343541;
+  color: #8e8ea0;
+}
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: "Poppins", sans-serif;
+  font-family: "Courier New", Courier, monospace;
 }
 h1,
 h2 {
   margin-bottom: 30px;
   text-align: center;
+  color: #8e8ea0;
 }
 h3 {
   padding-bottom: 20px;
-}
-body {
-  background-color: #333;
-  color: white;
 }
 ul {
   list-style: none;
@@ -26,78 +26,54 @@ input {
   text-decoration: none;
   font-weight: bold;
 }
-nav {
-  box-shadow: 0px 2px 40px 1px white;
-  width: 100%;
-  background-color: #333;
-  color: #fff;
-  margin-bottom: 30px;
-  padding: 10px;
-}
-nav ul {
-  padding: 10px;
-  width: 1100px;
-  margin: 0 auto;
-  list-style-type: none;
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  color: white;
-}
-nav ul li,
-nav ul input {
-  padding: 5px;
-  cursor: pointer;
-  color: white;
-  border: none;
-  transition: 0.2s all;
-}
-nav ul li:hover,
-nav ul input:hover {
-  color: yellow;
-}
-nav ul input {
-  background: transparent;
-  border: none;
-  outline: none;
-}
 
 article {
   width: 900px;
   margin: 0 auto;
-  background-color: #f9f9f9;
+  background-color: #8e8ea0;
   padding: 1rem;
-  color: #333;
-  border-left: 3px solid red;
+  color: #343541;
+  border-left: 5px solid #10a37f;
   margin-bottom: 12px;
 }
 article h3 {
   font-family: "Montserrat", sans-serif;
+  text-transform: capitalize;
 }
 article p {
   font-family: "Edu NSW ACT Foundation", cursive;
+  text-align: left;
 }
 .images {
-  width: 900px;
+  width: 1100px;
   margin: 12px auto;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 10px;
+  place-items: center;
 }
 .images li {
+  border-radius: 5px;
+  overflow: hidden;
   height: 350px;
-  width: 350px;
+  width: 100%;
+  display: block;
+  transition: 0.2s all;
+}
+.images li:hover {
+  border-radius: 0;
 }
 img {
   width: 100%;
   height: 100%;
 }
 .videos {
-  width: 1100px;
+  width: 900px;
   margin: 0 auto;
-  display: flex;
-  justify-content: space-evenly;
+  display: grid;
+  grid-gap: 10px;
 }
-.videos li {
-  width: 50%;
+.videos li iframe {
+  width: 100%;
+  height: 400px;
 }

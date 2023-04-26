@@ -4,8 +4,12 @@
 <head>
   <link rel="stylesheet" href="../styles/media.css">
 </head>
-<h2>User Images</h2>
+<h2>Your Gallery</h2>
 <ul class="images">
+  <li><img src="../regularFiles/regular_image1.jpg" alt="user image"></li>
+  <li><img src="../regularFiles/regular_image2.jpg" alt="user image"></li>
+  <li><img src="../regularFiles/regular_image1.jpg" alt="user image"></li>
+  <li><img src="../regularFiles/regular_image2.jpg" alt="user image"></li>
   <li><img src="../regularFiles/regular_image1.jpg" alt="user image"></li>
   <li><img src="../regularFiles/regular_image2.jpg" alt="user image"></li>
 </ul>
